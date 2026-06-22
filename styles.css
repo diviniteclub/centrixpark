@@ -1017,7 +1017,24 @@ figcaption {
   }
 
   .status-strip {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .status-strip div {
+    min-height: 118px;
+    padding: 20px 18px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .status-strip strong {
+    font-size: 44px;
+  }
+
+  .status-strip span {
+    display: block;
+    font-size: 16px;
+    line-height: 1.25;
   }
 
   .info-grid {
@@ -1027,27 +1044,29 @@ figcaption {
 
   .info-grid article {
     display: grid;
-    grid-template-columns: 34px 1fr;
-    gap: 8px;
-    min-height: 106px;
-    padding: 10px;
+    grid-template-columns: 28px 1fr;
+    gap: 7px;
+    min-height: 100px;
+    padding: 10px 8px;
   }
 
   .info-icon {
-    width: 34px;
-    height: 34px;
-    font-size: 10px;
+    width: 28px;
+    height: 28px;
+    font-size: 9px;
   }
 
   .info-grid strong {
-    font-size: 13px;
-    line-height: 1.28;
+    font-size: 12.5px;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
   }
 
   .info-grid small {
-    margin-top: 3px;
-    font-size: 11px;
-    line-height: 1.3;
+    margin-top: 5px;
+    font-size: 10.5px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
   }
 
   .section {
