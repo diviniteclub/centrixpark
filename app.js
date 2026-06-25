@@ -3,7 +3,7 @@ const defaultUnits = [
   { id: "U8", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "available", note: "ยูนิตมาตรฐาน" },
   { id: "U7", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "available", note: "ยูนิตมาตรฐาน" },
   { id: "U6", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "สถานะจากภาพตัวอย่าง" },
-  { id: "U5", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "available", note: "ยูนิตมาตรฐาน" },
+  { id: "U5", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "จองแล้ว" },
   { id: "U4", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "สถานะจากภาพตัวอย่าง" },
   { id: "U3", side: "left", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "available", note: "หัวมุม" },
   { id: "U2", side: "left", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "reserved", note: "สถานะจากภาพตัวอย่าง" },
@@ -25,7 +25,7 @@ const statusLabels = {
   rented: "ให้เช่าแล้ว"
 };
 
-const storageKey = "storix-units-v1";
+const storageKey = "storix-units-v2";
 const adminPassword = "2468";
 const lineUrl = "https://lin.ee/n7IwEYp";
 const unitGapBefore = new Set(["U6", "U3", "U14", "U17"]);
