@@ -14,7 +14,7 @@ const defaultUnits = [
   { id: "U14", side: "right", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "available", note: "ยูนิตมาตรฐาน" },
   { id: "U15", side: "right", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "available", note: "ยูนิตมาตรฐาน" },
   { id: "U16", side: "right", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "available", note: "ยูนิตมาตรฐาน" },
-  { id: "U17", side: "right", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "available", note: "หัวมุม" },
+  { id: "U17", side: "right", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "reserved", note: "จองแล้ว" },
   { id: "U18", side: "right", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "available", note: "หัวมุม" },
   { id: "U19", side: "right", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "available", note: "หัวมุม" }
 ];
@@ -25,7 +25,7 @@ const statusLabels = {
   rented: "ให้เช่าแล้ว"
 };
 
-const storageKey = "storix-units-v2";
+const storageKey = "storix-units-v3";
 const adminPassword = "2468";
 const lineUrl = "https://lin.ee/n7IwEYp";
 const unitGapBefore = new Set(["U6", "U3", "U14", "U17"]);
