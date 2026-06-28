@@ -1,9 +1,9 @@
-const defaultUnits = [
+﻿const defaultUnits = [
   { id: "U9", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "available", note: "ยูนิตมาตรฐาน" },
   { id: "U8", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "available", note: "ยูนิตมาตรฐาน" },
   { id: "U7", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "available", note: "ยูนิตมาตรฐาน" },
   { id: "U6", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "สถานะจากภาพตัวอย่าง" },
-  { id: "U5", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "จองแล้ว" },
+  { id: "U5", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "มีผู้เช่าแล้ว" },
   { id: "U4", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "สถานะจากภาพตัวอย่าง" },
   { id: "U3", side: "left", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "available", note: "หัวมุม" },
   { id: "U2", side: "left", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "reserved", note: "สถานะจากภาพตัวอย่าง" },
@@ -14,14 +14,14 @@ const defaultUnits = [
   { id: "U14", side: "right", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "available", note: "ยูนิตมาตรฐาน" },
   { id: "U15", side: "right", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "available", note: "ยูนิตมาตรฐาน" },
   { id: "U16", side: "right", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "available", note: "ยูนิตมาตรฐาน" },
-  { id: "U17", side: "right", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "reserved", note: "จองแล้ว" },
+  { id: "U17", side: "right", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "reserved", note: "มีผู้เช่าแล้ว" },
   { id: "U18", side: "right", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "available", note: "หัวมุม" },
   { id: "U19", side: "right", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "available", note: "หัวมุม" }
 ];
 
 const statusLabels = {
   available: "ว่าง",
-  reserved: "จอง",
+  reserved: "มีผู้เช่าแล้ว",
   rented: "ให้เช่าแล้ว"
 };
 
@@ -111,7 +111,7 @@ function renderStats() {
 function renderSelected() {
   const card = document.querySelector("[data-selected-card]");
   const unit = units.find((item) => item.id === selectedId) || units[0];
-  const lineMessage = `สนใจสอบถามรายละเอียด STORIX Warehouse ยูนิต ${unit.id} ราคา ${money.format(unit.price)} บาท/เดือน ขนาด ${unit.size} พื้นที่ ${unit.area}`;
+  const lineMessage = `สนใจสอบถามรายละเอียด Storix Warehouse ยูนิต ${unit.id} ราคา ${money.format(unit.price)} บาท/เดือน ขนาด ${unit.size} พื้นที่ ${unit.area}`;
   card.innerHTML = `
     <p class="eyebrow">Selected Unit</p>
     <h3>${unit.id} · ${unit.type}</h3>
@@ -138,7 +138,7 @@ function renderAdmin() {
       <input type="number" min="0" step="1000" value="${unit.price}" aria-label="ราคา ${unit.id}" data-admin-price="${unit.id}">
       <select aria-label="สถานะ ${unit.id}" data-admin-status="${unit.id}">
         <option value="available"${unit.status === "available" ? " selected" : ""}>ว่าง</option>
-        <option value="reserved"${unit.status === "reserved" ? " selected" : ""}>จอง</option>
+        <option value="reserved"${unit.status === "reserved" ? " selected" : ""}>มีผู้เช่าแล้ว</option>
         <option value="rented"${unit.status === "rented" ? " selected" : ""}>ให้เช่าแล้ว</option>
       </select>
     `;
