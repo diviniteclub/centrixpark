@@ -3,274 +3,165 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>STORIX Warehouse | ศรีวรา</title>
+    <title>CENTRIX Park | โกดังและออฟฟิศให้เช่า</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260622-10">
+    <link rel="stylesheet" href="styles.css?v=20260628-home-1">
   </head>
-  <body>
-    <header class="topbar">
-      <a class="brand" href="#top" aria-label="STORIX Warehouse">
-        <span>STORIX</span>
-        <small>Warehouse</small>
+  <body class="home-page">
+    <header class="topbar home-topbar">
+      <a class="brand" href="#top" aria-label="CENTRIX Park">
+        <span>CENTRIX</span>
+        <small>Park</small>
       </a>
       <nav aria-label="เมนูหลัก">
+        <a href="#projects">โครงการ</a>
         <a href="#availability">ยูนิตว่าง</a>
-        <a href="#details">รายละเอียด</a>
-        <a href="#gallery">รูปภาพ</a>
-        <a href="#faq">FAQ</a>
         <a href="#contact">ติดต่อ</a>
       </nav>
-      <button class="admin-open" type="button" data-open-admin>Admin</button>
     </header>
 
     <main id="top">
-      <section class="hero">
-        <img src="assets/storix-sriwara/hero-daylight.jpeg" alt="ภาพโกดัง STORIX Warehouse ช่วงกลางวัน">
-        <div class="hero-copy">
-          <p>ถนนศรีวรา ทาวน์อินทาวน์</p>
-          <h1>Premium Warehouse<br> & Office</h1>
+      <section class="home-hero">
+        <div class="home-hero-copy">
+          <p class="eyebrow">Warehouse & Office Portfolio</p>
+          <h1>ค้นหาโกดังและออฟฟิศให้เช่า จากหลายทำเลในหน้าเดียว</h1>
+          <p>
+            ดูสถานะยูนิตว่าง ราคาเริ่มต้น และทำเลของแต่ละโครงการได้ทันที
+            ก่อนกดเข้าไปดูรายละเอียด ผังยูนิต และนัดชมสถานที่จริง
+          </p>
           <div class="hero-actions">
-            <a class="button primary" href="#availability">ดูยูนิตว่าง</a>
-            <a class="button ghost" href="#contact">ขอข้อมูลทาง LINE</a>
+            <a class="button primary" href="#projects">ดูโครงการทั้งหมด</a>
+            <a class="button ghost dark" href="https://lin.ee/n7IwEYp" target="_blank" rel="noreferrer">สอบถามทาง LINE</a>
+          </div>
+        </div>
+        <div class="home-hero-media" aria-label="ภาพรวมโครงการ">
+          <img src="assets/storix-sriwara/hero-daylight.jpeg" alt="โกดังและออฟฟิศให้เช่า">
+          <div class="home-hero-badge">
+            <strong>12</strong>
+            <span>ยูนิตว่างพร้อมนัดชม</span>
           </div>
         </div>
       </section>
 
-      <section class="status-strip" aria-label="สรุปสถานะยูนิต">
+      <section class="home-stats" aria-label="ภาพรวมสถานะทุกโครงการ">
         <div>
-          <strong data-stat="total">0</strong>
-          <span>ยูนิตทั้งหมด</span>
+          <strong>2</strong>
+          <span>โครงการบนเว็บ</span>
         </div>
         <div>
-          <strong data-stat="available">0</strong>
-          <span>ยูนิตว่าง</span>
+          <strong>18</strong>
+          <span>ยูนิตรวมที่เปิดข้อมูล</span>
         </div>
         <div>
-          <strong data-stat="reserved">0</strong>
-          <span>จองแล้ว</span>
+          <strong>12</strong>
+          <span>ยูนิตว่างตอนนี้</span>
         </div>
         <div>
           <strong>38,000</strong>
-          <span>เริ่มต้น บาท/เดือน</span>
+          <span>ราคาเริ่มต้น บาท/เดือน</span>
         </div>
       </section>
 
-      <section class="section intro">
-        <div>
-          <p class="eyebrow">Premium Warehouse</p>
-          <h2 class="intro-title">ตอบโจทย์ธุรกิจที่ต้องการทั้งสำนักงานและพื้นที่เก็บสินค้าในทำเลใจกลางเมือง</h2>
-        </div>
-        <p>
-          เดินทางสะดวก เข้า-ออกเมืองง่าย เหมาะสำหรับธุรกิจออนไลน์ สำนักงานขาย บริษัทนำเข้า-ส่งออก
-          และผู้ประกอบการที่ต้องการภาพลักษณ์ที่ดี พร้อมพื้นที่ใช้งานครบในที่เดียว
-        </p>
-      </section>
-
-      <section class="section location-brief" id="location">
-        <div class="location-card">
+      <section class="section project-directory" id="projects">
+        <div class="section-head">
           <div>
-            <p class="eyebrow">Prime Location</p>
-            <h2 class="location-title">ทำเลทาวน์อินทาวน์ เดินทางง่าย ใกล้ลูกค้าและทีมงาน</h2>
-            <p>คลิกดูตำแหน่งโครงการบน Google Maps เพื่อประเมินเส้นทางเข้า-ออกก่อนนัดชมสถานที่จริง</p>
+            <p class="eyebrow">Projects</p>
+            <h2>เลือกดูตามโครงการ</h2>
           </div>
-          <a class="button primary map-button" href="https://maps.app.goo.gl/DxD41CHB8ijtZhs77" target="_blank" rel="noreferrer">
-            <span class="map-logo">G</span>
-            <span>เปิด Google Maps</span>
-          </a>
+          <p class="home-note">สถานะบนหน้าแรกเป็นภาพรวม ใช้กดเข้าไปดูผังและรายละเอียดของแต่ละโครงการต่อได้ทันที</p>
         </div>
 
-        <div class="info-grid" aria-label="ข้อมูลสำคัญของโครงการ">
-          <article><span class="info-icon">WH</span><strong>โกดังให้เช่า พร้อมสำนักงาน</strong><small>ทาวน์อินทาวน์</small></article>
-          <article><span class="info-icon">฿</span><strong>ราคาเริ่มต้น 38,000/เดือน</strong><small>ค่าเช่ารายเดือน</small></article>
-          <article><span class="info-icon">M2</span><strong>พื้นที่เริ่มต้น 115 ตร.ม.</strong><small>U10-U12: 120 ตร.ม.</small></article>
-          <article><span class="info-icon">OF</span><strong>มีออฟฟิศและห้องน้ำในตัว</strong><small>พร้อมใช้งาน</small></article>
-          <article><span class="info-icon">P</span><strong>ที่จอดรถส่วนตัว</strong><small>หน้าแต่ละยูนิต</small></article>
-          <article><span class="info-icon">NEW</span><strong>โกดังสร้างใหม่</strong><small>ภาพลักษณ์มืออาชีพ</small></article>
-          <article><span class="info-icon">W</span><strong>ค่าน้ำ 20 บาท/ยูนิต</strong><small>ตามการใช้งาน</small></article>
-          <article><span class="info-icon">E</span><strong>ค่าไฟฟ้า 7 บาท/ยูนิต</strong><small>ตามการใช้งาน</small></article>
-          <article><span class="info-icon">3Y</span><strong>สัญญาเช่า 3 ปี</strong><small>ล่วงหน้า 1 + ประกัน 2 เดือน</small></article>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <a class="project-image" href="storix-sriwara/" aria-label="ดูโครงการ STORIX ศรีวรา">
+              <img src="assets/storix-sriwara/site-layout-perspective.png" alt="ผังโครงการ STORIX ศรีวรา">
+              <span class="project-status available">มียูนิตว่าง</span>
+            </a>
+            <div class="project-content">
+              <div>
+                <p class="eyebrow">Town in Town</p>
+                <h3>STORIX Warehouse ศรีวรา</h3>
+                <p>โกดังให้เช่า พร้อมสำนักงาน ทำเลถนนศรีวรา ทาวน์อินทาวน์ เหมาะสำหรับธุรกิจออนไลน์ สำนักงานขาย และพื้นที่เก็บสินค้าในเมือง</p>
+              </div>
+              <div class="project-metrics" aria-label="สถานะ STORIX ศรีวรา">
+                <span><strong>18</strong>ยูนิตทั้งหมด</span>
+                <span><strong>12</strong>ยูนิตว่าง</span>
+                <span><strong>6</strong>จองแล้ว</span>
+              </div>
+              <div class="availability-bar" aria-label="แถบสถานะยูนิต STORIX ศรีวรา">
+                <span class="bar available" style="--size: 12"></span>
+                <span class="bar reserved" style="--size: 6"></span>
+              </div>
+              <dl class="project-facts">
+                <div><dt>ราคาเริ่มต้น</dt><dd>38,000/เดือน</dd></div>
+                <div><dt>พื้นที่เริ่มต้น</dt><dd>115 ตร.ม.</dd></div>
+                <div><dt>สถานะล่าสุด</dt><dd>26 มิ.ย. 2026</dd></div>
+              </dl>
+              <a class="button primary" href="storix-sriwara/">ดูรายละเอียดโครงการ</a>
+            </div>
+          </article>
+
+          <article class="project-card coming-soon">
+            <div class="project-image placeholder" aria-label="โครงการ Bizspace รามอินทรา">
+              <span>Bizspace</span>
+              <small>Ramindra</small>
+            </div>
+            <div class="project-content">
+              <div>
+                <p class="eyebrow">Coming Next</p>
+                <h3>Bizspace เลียบทางด่วนรามอินทรา</h3>
+                <p>เตรียมเพิ่มข้อมูลโครงการใหม่ แยกผังยูนิต รูปภาพ สถานะห้องว่าง และรายละเอียดทำเลเป็นหน้าเฉพาะโครงการ</p>
+              </div>
+              <div class="project-metrics muted" aria-label="สถานะ Bizspace รามอินทรา">
+                <span><strong>-</strong>ยูนิตทั้งหมด</span>
+                <span><strong>-</strong>ยูนิตว่าง</span>
+                <span><strong>-</strong>จองแล้ว</span>
+              </div>
+              <div class="availability-bar empty" aria-label="รอข้อมูลสถานะยูนิต"></div>
+              <dl class="project-facts">
+                <div><dt>URL ที่เตรียมไว้</dt><dd>/bizspace-ramindra/</dd></div>
+                <div><dt>สถานะข้อมูล</dt><dd>รอรูปและผังโครงการ</dd></div>
+              </dl>
+              <a class="button ghost dark" href="#contact">แจ้งข้อมูลโครงการนี้</a>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="section availability" id="availability">
+      <section class="section availability-overview" id="availability">
         <div class="section-head">
           <div>
             <p class="eyebrow">Live Availability</p>
-            <h2>ผังยูนิตและสถานะล่าสุด</h2>
-            <p class="updated-badge">อัปเดตล่าสุด: 26 มิ.ย. 2026</p>
-          </div>
-          <div class="legend" aria-label="คำอธิบายสีสถานะ">
-            <span><i class="dot available"></i>ว่าง</span>
-            <span><i class="dot reserved"></i>จอง</span>
-            <span><i class="dot rented"></i>ให้เช่าแล้ว</span>
+            <h2>ยูนิตว่างแยกตามโครงการ</h2>
           </div>
         </div>
-
-        <div class="availability-grid">
-          <div class="site-map" aria-label="ผังยูนิต STORIX">
-            <div class="road-label">ถนนศรีวรา</div>
-            <div class="unit-column left" data-column="left"></div>
-            <div class="driveway">
-              <span></span>
-              <span>ถนนภายในโครงการ</span>
-              <span class="entry-exit">ทางเข้า-ออก</span>
-            </div>
-            <div class="unit-column right" data-column="right"></div>
+        <div class="overview-list">
+          <a class="overview-row" href="storix-sriwara/">
+            <span class="overview-name">STORIX ศรีวรา</span>
+            <span class="overview-location">ถนนศรีวรา ทาวน์อินทาวน์</span>
+            <span class="overview-number">12 ว่าง</span>
+            <span class="overview-price">เริ่ม 38,000/เดือน</span>
+          </a>
+          <div class="overview-row disabled">
+            <span class="overview-name">Bizspace รามอินทรา</span>
+            <span class="overview-location">เลียบทางด่วนรามอินทรา</span>
+            <span class="overview-number">รอข้อมูล</span>
+            <span class="overview-price">กำลังจัดทำ</span>
           </div>
-
-          <aside class="unit-panel">
-            <div class="selected-card" data-selected-card>
-              <p class="eyebrow">Selected Unit</p>
-              <h3>เลือกยูนิตบนผัง</h3>
-              <p>กดที่ยูนิตเพื่อดูราคา ขนาด และสถานะล่าสุด</p>
-            </div>
-            <div class="quick-filters" aria-label="ตัวกรองสถานะ">
-              <button class="filter active" type="button" data-filter="all">ทั้งหมด</button>
-              <button class="filter" type="button" data-filter="available">ว่าง</button>
-              <button class="filter" type="button" data-filter="reserved">จอง</button>
-              <button class="filter" type="button" data-filter="rented">ให้เช่าแล้ว</button>
-            </div>
-          </aside>
-        </div>
-
-        <div class="price-summary" aria-label="สรุปราคาเช่าตามกลุ่มยูนิต">
-          <article>
-            <span>Premium Corner</span>
-            <strong>45,000 บาท/เดือน</strong>
-            <small>U1, U2, U3, U17, U18, U19 · 6.5 x 14 ม. · 115 ตร.ม.</small>
-          </article>
-          <article>
-            <span>Large Depth</span>
-            <strong>40,000 บาท/เดือน</strong>
-            <small>U10, U11, U12 · 6.5 x 15 ม. · 120 ตร.ม.</small>
-          </article>
-          <article>
-            <span>Standard</span>
-            <strong>38,000 บาท/เดือน</strong>
-            <small>U4, U5, U6, U7, U8, U9, U14, U15, U16 · 6.5 x 14 ม. · 115 ตร.ม.</small>
-          </article>
         </div>
       </section>
 
-      <section class="section details" id="details">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Project Details</p>
-            <h2>รายละเอียดโครงการ</h2>
-          </div>
-        </div>
-        <div class="detail-grid">
-          <article>
-            <h3>จุดเด่น</h3>
-            <ul>
-              <li>ทำเลทองบนถนนศรีวรา ทาวน์อินทาวน์</li>
-              <li>เข้าออกเมืองสะดวก เชื่อมต่อย่านธุรกิจ</li>
-              <li>คลังสินค้าเพดานสูง โล่งโปร่ง ใช้งานยืดหยุ่น</li>
-              <li>ออฟฟิศพร้อมห้องน้ำในตัว พร้อมใช้งาน</li>
-              <li>ระบบรักษาความปลอดภัย 24 ชั่วโมง พร้อม CCTV</li>
-            </ul>
-          </article>
-          <article>
-            <h3>รายละเอียดอาคาร</h3>
-            <ul>
-              <li>โครงสร้างเหล็กมาตรฐาน แข็งแรง</li>
-              <li>หลังคาเมทัลชีท พร้อมฉนวนกันความร้อน</li>
-              <li>ประตูม้วนหน้ากว้าง 4 เมตร พร้อมประตูกระจก</li>
-              <li>รองรับระบบไฟฟ้า 1 เฟส และ 3 เฟส</li>
-              <li>ระบบน้ำประปาพร้อมใช้งาน</li>
-            </ul>
-          </article>
-          <article>
-            <h3>ขนาดยูนิต</h3>
-            <ul>
-              <li>หน้ากว้าง 6.5 เมตร</li>
-              <li>ความลึก 14-15 เมตร</li>
-              <li>พื้นที่ใช้สอยรวมประมาณ 115 ตร.ม.</li>
-              <li>เหมาะกับโกดัง สำนักงาน ร้านค้า และธุรกิจบริการ</li>
-            </ul>
-          </article>
-        </div>
-        <figure class="reference-plan">
-          <img src="assets/storix-sriwara/site-layout-perspective.png" alt="ภาพผังบริเวณโครงการ STORIX Warehouse">
-          <figcaption>ผังบริเวณแบบย่อ ใช้ดูตำแหน่งยูนิตและถนนภายในโครงการ</figcaption>
-        </figure>
-      </section>
-
-      <section class="section gallery" id="gallery">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Gallery</p>
-            <h2>รูปพื้นที่จริง</h2>
-          </div>
-        </div>
-        <div class="gallery-grid">
-          <figure>
-            <img src="assets/storix-sriwara/warehouse.png" alt="พื้นที่โกดังภายใน">
-            <figcaption>พื้นที่โกดังสูงโปร่ง</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/storix-sriwara/office.png" alt="พื้นที่ออฟฟิศภายในยูนิต">
-            <figcaption>ออฟฟิศภายในยูนิต</figcaption>
-          </figure>
-        </div>
-        <div class="promo-gallery" aria-label="ภาพรายละเอียดเพิ่มเติม">
-          <button class="promo-thumb" type="button" data-lightbox-src="assets/storix-sriwara/promo-detail.png" data-lightbox-alt="ภาพรายละเอียดโครงการ STORIX Warehouse">
-            <img src="assets/storix-sriwara/promo-detail.png" alt="ภาพรายละเอียดโครงการ STORIX Warehouse">
-            <span>รายละเอียดโครงการ</span>
-          </button>
-          <button class="promo-thumb" type="button" data-lightbox-src="assets/storix-sriwara/promo-price.png" data-lightbox-alt="ภาพรายละเอียดและราคาเช่า STORIX Warehouse">
-            <img src="assets/storix-sriwara/promo-price.png" alt="ภาพรายละเอียดและราคาเช่า STORIX Warehouse">
-            <span>รายละเอียดและราคาเช่า</span>
-          </button>
-        </div>
-      </section>
-
-      <section class="section faq" id="faq">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">FAQ</p>
-            <h2>คำถามที่พบบ่อย</h2>
-          </div>
-        </div>
-        <div class="faq-list">
-          <details open>
-            <summary>ต้องชำระเงินก่อนเข้าเช่าเท่าไหร่?</summary>
-            <p>ชำระค่าเช่าล่วงหน้า 1 เดือน และเงินประกัน 2 เดือน</p>
-          </details>
-          <details>
-            <summary>สัญญาเช่าขั้นต่ำกี่ปี?</summary>
-            <p>สัญญาเช่า 3 ปี เหมาะสำหรับธุรกิจที่ต้องการวางแผนพื้นที่ระยะยาว</p>
-          </details>
-          <details>
-            <summary>ค่าไฟและค่าน้ำคิดอย่างไร?</summary>
-            <p>ค่าน้ำ 20 บาท/ยูนิต และค่าไฟฟ้า 7 บาท/ยูนิต ตามการใช้งานจริง</p>
-          </details>
-          <details>
-            <summary>ภายในยูนิตมีอะไรให้บ้าง?</summary>
-            <p>มีพื้นที่โกดัง สำนักงาน ห้องน้ำในตัว ประตูม้วนหน้ากว้าง และที่จอดรถส่วนตัวหน้าแต่ละยูนิต</p>
-          </details>
-          <details>
-            <summary>เหมาะกับธุรกิจประเภทไหน?</summary>
-            <p>เหมาะกับธุรกิจออนไลน์ สำนักงานขาย บริษัทนำเข้า-ส่งออก ร้านค้า และธุรกิจที่ต้องการพื้นที่เก็บสินค้าในเมือง</p>
-          </details>
-        </div>
-      </section>
-
-      <section class="contact" id="contact">
+      <section class="contact home-contact" id="contact">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>สนใจ สอบถามรายละเอียดเพิ่มเติม</h2>
-          <p>แจ้งรหัสยูนิตที่สนใจ เช่น U3, U10 หรือ U17 เพื่อเช็กรอบเข้าชมและเงื่อนไขสัญญาล่าสุด</p>
+          <h2>ต้องการเช็กยูนิตว่าง หรือนัดชมโครงการ</h2>
+          <p>ส่งชื่อโครงการและยูนิตที่สนใจมาได้เลย ทีมงานจะช่วยเช็กสถานะล่าสุดและแนะนำทำเลที่เหมาะกับธุรกิจ</p>
         </div>
         <div class="contact-actions">
-          <a class="button primary" href="tel:0836662525">โทรสอบถาม 083-666-2525</a>
+          <a class="button primary" href="tel:0836662525">โทร 083-666-2525</a>
           <a class="button line" href="https://lin.ee/n7IwEYp" target="_blank" rel="noreferrer">ติดต่อ LINE</a>
-          <a class="button ghost dark map-button" href="https://maps.app.goo.gl/DxD41CHB8ijtZhs77" target="_blank" rel="noreferrer">
-            <span class="map-logo">G</span>
-            <span>เปิด Google Maps</span>
-          </a>
         </div>
       </section>
     </main>
@@ -278,55 +169,7 @@
     <div class="sticky-contact" aria-label="ติดต่อด่วน">
       <a href="tel:0836662525">โทร 083-666-2525</a>
       <a href="https://lin.ee/n7IwEYp" target="_blank" rel="noreferrer">LINE</a>
-      <a href="https://maps.app.goo.gl/DxD41CHB8ijtZhs77" target="_blank" rel="noreferrer">Maps</a>
+      <a href="#projects">โครงการ</a>
     </div>
-
-    <dialog class="admin-dialog login-dialog" data-login-dialog>
-      <form class="admin-modal login-modal" data-login-form>
-        <header>
-          <div>
-            <p class="eyebrow">Admin Login</p>
-            <h2>ใส่รหัสก่อนแก้ไขสถานะ</h2>
-          </div>
-          <button class="icon-button" type="button" data-close-login aria-label="ปิด">×</button>
-        </header>
-        <label class="password-field">
-          <span>รหัส Admin</span>
-          <input type="password" inputmode="numeric" autocomplete="current-password" data-admin-password-input>
-        </label>
-        <p class="login-error" data-login-error hidden>รหัสไม่ถูกต้อง</p>
-        <footer>
-          <button class="button ghost dark" type="button" data-close-login>ยกเลิก</button>
-          <button class="button primary" type="submit">เข้าสู่ระบบ</button>
-        </footer>
-      </form>
-    </dialog>
-
-    <dialog class="admin-dialog" data-admin-dialog>
-      <form method="dialog" class="admin-modal">
-        <header>
-          <div>
-            <p class="eyebrow">Admin</p>
-            <h2>แก้ไขสถานะยูนิต</h2>
-          </div>
-          <button class="icon-button" value="close" aria-label="ปิด">×</button>
-        </header>
-        <div class="admin-note">
-          ข้อมูลเดโมนี้บันทึกใน browser ด้วย localStorage เหมาะสำหรับทดสอบ flow ก่อนต่อฐานข้อมูลจริง
-        </div>
-        <div class="admin-list" data-admin-list></div>
-        <footer>
-          <button class="button ghost dark" type="button" data-reset>รีเซ็ตข้อมูล</button>
-          <button class="button primary" value="close">เสร็จแล้ว</button>
-        </footer>
-      </form>
-    </dialog>
-
-    <dialog class="lightbox-dialog" data-lightbox-dialog>
-      <button class="icon-button lightbox-close" type="button" data-lightbox-close aria-label="ปิด">×</button>
-      <img src="" alt="" data-lightbox-image>
-    </dialog>
-
-    <script src="app.js?v=20260626-1"></script>
   </body>
 </html>
