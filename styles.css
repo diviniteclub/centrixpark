@@ -1432,6 +1432,7 @@ figcaption {
   position: absolute;
   left: 14px;
   top: 14px;
+  z-index: 2;
   display: inline-flex;
   min-height: 32px;
   align-items: center;
@@ -1452,6 +1453,8 @@ figcaption {
   height: 240px;
   padding: 24px;
   color: white;
+  background-position: center;
+  background-size: cover;
   text-align: left;
   isolation: isolate;
 }
@@ -1472,14 +1475,20 @@ figcaption {
 
 .storix-cover {
   background:
-    linear-gradient(135deg, #113d25, #1a2b25 62%, #0f1719),
+    linear-gradient(105deg, rgba(14, 43, 32, 0.92), rgba(12, 23, 24, 0.78)),
+    url("assets/storix-sriwara/hero-daylight.jpeg"),
     #113d25;
+  background-position: center 44%;
+  background-size: cover;
 }
 
 .ramindra-cover {
   background:
-    linear-gradient(135deg, #172026, #0f3d2d 58%, #11201a),
+    linear-gradient(105deg, rgba(13, 38, 31, 0.9), rgba(12, 22, 23, 0.78)),
+    url("assets/bizspace-ramindra/warehouse-front.jpeg"),
     #172026;
+  background-position: center 52%;
+  background-size: cover;
 }
 
 .bizspace-hero {
