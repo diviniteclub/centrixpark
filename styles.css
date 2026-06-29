@@ -752,6 +752,19 @@ figcaption {
   font-weight: 800;
 }
 
+.compact-gallery {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.gallery-thumb {
+  min-width: 0;
+}
+
+.gallery-thumb img {
+  aspect-ratio: 4 / 3;
+  max-height: 150px;
+}
+
 .faq-list {
   display: grid;
   gap: 10px;
@@ -1469,6 +1482,128 @@ figcaption {
     #172026;
 }
 
+.bizspace-hero {
+  background:
+    linear-gradient(105deg, rgba(13, 39, 31, 0.9), rgba(15, 23, 27, 0.76)),
+    radial-gradient(circle at 72% 34%, rgba(202, 160, 88, 0.2), transparent 32%),
+    linear-gradient(135deg, #0f3f2a, #101820);
+}
+
+.bizspace-hero::after {
+  background: linear-gradient(90deg, rgba(10, 18, 20, 0.78), rgba(10, 18, 20, 0.18));
+}
+
+.bizspace-hero-visual {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center end;
+  gap: 10px;
+  padding: 0 clamp(32px, 9vw, 140px);
+  color: rgba(255, 255, 255, 0.88);
+  text-align: right;
+  z-index: 0;
+}
+
+.bizspace-hero-visual span {
+  color: var(--gold);
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bizspace-hero-visual strong {
+  font-size: clamp(2.2rem, 6vw, 5.8rem);
+  line-height: 0.95;
+  max-width: 650px;
+}
+
+.bizspace-hero-visual small {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  font-weight: 700;
+}
+
+.bizspace-page .ramindra-site-map {
+  grid-template-columns: minmax(120px, 0.68fr) minmax(0, 1fr);
+  min-height: 640px;
+}
+
+.bizspace-page .ramindra-site-map .unit-column.left {
+  display: none;
+}
+
+.bizspace-page .ramindra-site-map .driveway {
+  order: 1;
+  align-content: start;
+  gap: clamp(34px, 7vw, 96px);
+}
+
+.bizspace-page .ramindra-site-map .unit-column.right {
+  order: 2;
+}
+
+.bizspace-page .ramindra-site-map .unit {
+  min-height: 82px;
+}
+
+.bizspace-page .ramindra-site-map .unit.wide-unit {
+  min-height: 112px;
+  padding-block: 16px;
+}
+
+.bizspace-page .ramindra-site-map .unit.wide-unit .badge {
+  width: 50px;
+  height: 50px;
+}
+
+.bizspace-page .reference-plan img {
+  object-position: center top;
+}
+
+.empty-project-state {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(20, 79, 51, 0.08), rgba(201, 159, 80, 0.08)),
+    var(--surface);
+  min-height: 260px;
+  padding: clamp(28px, 5vw, 60px);
+  display: grid;
+  align-content: center;
+  box-shadow: var(--shadow);
+}
+
+.empty-project-state h3 {
+  margin: 4px 0 10px;
+  font-size: clamp(1.55rem, 3vw, 2.6rem);
+}
+
+.empty-project-state p:not(.eyebrow) {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.admin-empty {
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  padding: 20px;
+  background: rgba(247, 244, 236, 0.7);
+}
+
+.admin-empty strong {
+  display: block;
+  color: var(--green);
+  margin-bottom: 6px;
+}
+
+.admin-empty p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .project-cover-brand,
 .project-cover strong,
 .project-cover small {
@@ -1518,6 +1653,13 @@ figcaption {
 .project-content p:not(.eyebrow) {
   margin: 12px 0 0;
   color: var(--muted);
+}
+
+.project-card-compact .project-content p:not(.eyebrow) {
+  min-height: 28px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .project-metrics {
@@ -2304,6 +2446,22 @@ figcaption {
     font-size: 12px;
   }
 
+  .bizspace-hero-visual {
+    place-content: end start;
+    padding: 0 22px 28px;
+    text-align: left;
+    opacity: 0.42;
+  }
+
+  .bizspace-hero-visual strong {
+    font-size: 42px;
+    max-width: 300px;
+  }
+
+  .bizspace-hero-visual small {
+    font-size: 14px;
+  }
+
   .project-content {
     gap: 10px;
     padding: 14px;
@@ -2585,6 +2743,14 @@ figcaption {
 
   .project-page .promo-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-page .compact-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-page .gallery-thumb img {
+    max-height: 120px;
   }
 
   .project-page .contact {
