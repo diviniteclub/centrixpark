@@ -2685,6 +2685,59 @@ figcaption {
     font-size: 8.5px;
   }
 
+  .bizspace-page .ramindra-site-map {
+    grid-template-columns: minmax(118px, 0.82fr) minmax(0, 1.18fr);
+    gap: 8px;
+    min-height: auto;
+    padding: 8px;
+  }
+
+  .bizspace-page .ramindra-site-map .driveway {
+    gap: 42px;
+    padding: 14px 8px;
+    font-size: 10px;
+  }
+
+  .bizspace-page .ramindra-site-map .unit-column.right {
+    gap: 8px;
+  }
+
+  .bizspace-page .ramindra-site-map .unit {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 8px;
+    min-height: 64px;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .bizspace-page .ramindra-site-map .unit.wide-unit {
+    min-height: 86px;
+    padding-block: 10px;
+  }
+
+  .bizspace-page .ramindra-site-map .badge {
+    width: 34px;
+    height: 34px;
+    margin: 0;
+    font-size: 13px;
+  }
+
+  .bizspace-page .ramindra-site-map .unit.wide-unit .badge {
+    width: 42px;
+    height: 42px;
+  }
+
+  .bizspace-page .ramindra-site-map .unit strong {
+    font-size: 12px;
+    line-height: 1.15;
+  }
+
+  .bizspace-page .ramindra-site-map .unit small {
+    font-size: 10px;
+    line-height: 1.25;
+  }
+
   .project-page .unit-panel {
     gap: 10px;
     padding: 12px;
