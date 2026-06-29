@@ -2385,4 +2385,225 @@ figcaption {
     min-height: 38px;
     font-size: 13px;
   }
+
+  .project-page .hero {
+    min-height: 360px;
+  }
+
+  .project-page .hero-copy {
+    width: min(100% - 28px, 760px);
+    padding: 0 0 24px;
+  }
+
+  .project-page .hero-copy p {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .project-page .hero h1 {
+    font-size: 34px;
+    line-height: 1.05;
+  }
+
+  .project-page .hero-actions {
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .project-page .hero-actions .button {
+    min-height: 40px;
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+
+  .project-page .status-strip div {
+    min-height: 72px;
+    padding: 10px 12px;
+  }
+
+  .project-page .status-strip strong {
+    font-size: 28px;
+  }
+
+  .project-page .status-strip span {
+    font-size: 13px;
+  }
+
+  .project-page .intro {
+    gap: 14px;
+  }
+
+  .project-page .intro-title {
+    font-size: 28px;
+  }
+
+  .project-page .intro p:not(.eyebrow),
+  .project-page .location-card p:not(.eyebrow),
+  .project-page .contact p:not(.eyebrow) {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .project-page .location-card {
+    gap: 16px;
+    padding: 18px;
+  }
+
+  .project-page .location-title {
+    font-size: 25px;
+    line-height: 1.15;
+  }
+
+  .project-page .location-card .button {
+    width: 100%;
+    min-height: 42px;
+  }
+
+  .project-page .info-grid article {
+    min-height: 96px;
+  }
+
+  .project-page .availability .section-head h2 {
+    font-size: 30px;
+  }
+
+  .project-page .updated-badge {
+    margin-top: 10px;
+    padding: 5px 9px;
+    font-size: 12px;
+  }
+
+  .project-page .legend {
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .project-page .availability-grid {
+    gap: 14px;
+  }
+
+  .project-page .site-map {
+    grid-template-columns: minmax(0, 1fr) 36px minmax(0, 1fr);
+    gap: 4px;
+    padding: 6px;
+  }
+
+  .project-page .unit-column {
+    gap: 5px;
+  }
+
+  .project-page .unit {
+    min-height: 44px;
+    padding: 6px 3px;
+  }
+
+  .project-page .badge {
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
+  .project-page .unit strong {
+    font-size: 9.5px;
+  }
+
+  .project-page .unit small {
+    font-size: 8.5px;
+  }
+
+  .project-page .unit.gap-before {
+    margin-top: 9px;
+  }
+
+  .project-page .driveway {
+    padding: 10px 2px;
+    font-size: 9px;
+  }
+
+  .project-page .entry-exit {
+    min-height: 26px;
+    width: 34px;
+    font-size: 8.5px;
+  }
+
+  .project-page .unit-panel {
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .project-page .selected-card {
+    padding: 14px;
+  }
+
+  .project-page .selected-card h3 {
+    font-size: 20px;
+  }
+
+  .project-page .quick-filters {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .project-page .filter {
+    min-height: 36px;
+    padding: 7px 6px;
+    font-size: 12px;
+  }
+
+  .project-page .price-summary {
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .project-page .price-summary article {
+    padding: 12px;
+  }
+
+  .project-page .price-summary strong {
+    font-size: 18px;
+  }
+
+  .project-page .price-summary small {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  .project-page .detail-grid {
+    gap: 10px;
+  }
+
+  .project-page .detail-grid article,
+  .project-page .faq-list details {
+    padding: 14px;
+  }
+
+  .project-page .gallery-grid,
+  .project-page .promo-gallery {
+    gap: 10px;
+  }
+
+  .project-page .promo-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-page .contact {
+    gap: 16px;
+    padding: 34px 18px;
+  }
+
+  .project-page .contact h2 {
+    font-size: 28px;
+  }
+
+  .project-page .contact-actions {
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .project-page .contact-actions .button {
+    min-height: 40px;
+    padding: 9px 12px;
+    font-size: 14px;
+  }
 }
