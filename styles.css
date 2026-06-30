@@ -217,6 +217,29 @@ nav a:hover {
   background: #06c755;
 }
 
+.button.share {
+  color: var(--forest);
+  border: 1px solid rgba(195, 155, 76, 0.45);
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.button.share:hover {
+  border-color: rgba(195, 155, 76, 0.72);
+  background: #fff8e6;
+}
+
+.button.share.dark {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(20, 79, 51, 0.96);
+}
+
+.button.share.subtle {
+  color: var(--forest);
+  border-color: rgba(20, 79, 51, 0.18);
+  background: #f7f3ea;
+}
+
 .map-button {
   gap: 10px;
   white-space: nowrap;
@@ -1217,14 +1240,16 @@ figcaption {
 
 .project-toolbar {
   display: grid;
-  grid-template-columns: minmax(300px, 1.1fr) minmax(180px, 0.38fr) minmax(360px, 1fr);
+  grid-template-columns: minmax(300px, 1.05fr) minmax(160px, 0.52fr) minmax(180px, 0.56fr) minmax(180px, 0.56fr) minmax(360px, 1fr);
   gap: 10px;
   margin-bottom: 22px;
   padding: 12px;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid var(--line);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(250, 247, 239, 0.78)),
+    rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(195, 155, 76, 0.28);
   border-radius: 8px;
-  box-shadow: 0 12px 28px rgba(23, 32, 38, 0.05);
+  box-shadow: 0 16px 42px rgba(23, 32, 38, 0.08);
 }
 
 .project-search {
@@ -1269,7 +1294,8 @@ figcaption {
   justify-content: flex-end;
 }
 
-.project-sort {
+.project-sort,
+.project-select-filter {
   display: grid;
   gap: 5px;
   align-self: stretch;
@@ -1279,13 +1305,15 @@ figcaption {
   border-radius: 6px;
 }
 
-.project-sort span {
+.project-sort span,
+.project-select-filter span {
   color: var(--muted);
   font-size: 12px;
   font-weight: 800;
 }
 
-.project-sort select {
+.project-sort select,
+.project-select-filter select {
   width: 100%;
   min-height: 28px;
   color: var(--forest);
@@ -1359,7 +1387,9 @@ figcaption {
 }
 
 .price-filter-panel input:focus,
-.project-search:focus-within {
+.project-search:focus-within,
+.project-sort:focus-within,
+.project-select-filter:focus-within {
   border-color: rgba(195, 155, 76, 0.72);
   box-shadow: 0 0 0 4px rgba(195, 155, 76, 0.14);
 }
@@ -1379,12 +1409,73 @@ figcaption {
   border-radius: 999px;
   cursor: pointer;
   font-weight: 800;
+  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+.price-shortcuts button:hover,
+.price-shortcuts button.active {
+  color: white;
+  background: var(--forest);
+  border-color: var(--forest);
+  transform: translateY(-1px);
+}
+
+.active-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: -8px 0 14px;
+}
+
+.active-filter-chips[hidden] {
+  display: none;
+}
+
+.active-filter-chips span {
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  padding: 5px 10px;
+  color: var(--forest);
+  background: rgba(246, 242, 233, 0.9);
+  border: 1px solid rgba(195, 155, 76, 0.28);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
 }
 
 .filter-result {
   margin: 0 0 16px;
   color: var(--muted);
   font-weight: 800;
+}
+
+.project-empty-state {
+  margin-top: 16px;
+  padding: 28px;
+  text-align: center;
+  background:
+    linear-gradient(135deg, rgba(20, 79, 51, 0.08), rgba(195, 155, 76, 0.1)),
+    #fff;
+  border: 1px solid rgba(195, 155, 76, 0.28);
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(23, 32, 38, 0.06);
+}
+
+.project-empty-state[hidden] {
+  display: none;
+}
+
+.project-empty-state strong {
+  display: block;
+  color: var(--forest);
+  font-size: 22px;
+}
+
+.project-empty-state p {
+  margin: 6px auto 16px;
+  max-width: 520px;
+  color: var(--muted);
 }
 
 .project-grid {
@@ -1395,20 +1486,39 @@ figcaption {
 }
 
 .project-card {
+  position: relative;
   display: grid;
   grid-template-rows: auto 1fr;
   overflow: hidden;
-  background: white;
-  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(250, 247, 239, 0.96)),
+    white;
+  border: 1px solid rgba(195, 155, 76, 0.24);
   border-radius: 8px;
-  box-shadow: 0 12px 32px rgba(23, 32, 38, 0.08);
-  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+  box-shadow: 0 18px 46px rgba(23, 32, 38, 0.1);
+  transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease;
+  isolation: isolate;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(201, 159, 80, 0.78), transparent);
+  opacity: 0;
+  transition: opacity 260ms ease;
+  z-index: 3;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   border-color: rgba(195, 155, 76, 0.58);
-  box-shadow: 0 24px 58px rgba(23, 32, 38, 0.14);
+  box-shadow: 0 28px 72px rgba(23, 32, 38, 0.16);
+}
+
+.project-card:hover::before {
+  opacity: 1;
 }
 
 .project-card.featured {
@@ -1440,10 +1550,12 @@ figcaption {
   color: white;
   border-radius: 999px;
   font-weight: 900;
+  box-shadow: 0 10px 24px rgba(7, 18, 22, 0.2);
+  transition: transform 220ms ease, background 220ms ease;
 }
 
 .project-status.available {
-  background: var(--available);
+  background: rgba(45, 119, 71, 0.92);
 }
 
 .project-status.coming {
@@ -1451,17 +1563,23 @@ figcaption {
   background: rgba(229, 201, 136, 0.95);
 }
 
+.project-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
 .project-cover {
   display: grid;
   align-content: end;
-  min-height: 240px;
-  height: 240px;
-  padding: 24px;
+  min-height: 255px;
+  height: 255px;
+  padding: 26px;
   color: white;
   background-position: center;
   background-size: cover;
   text-align: left;
   isolation: isolate;
+  transition: filter 260ms ease;
 }
 
 .project-cover::after {
@@ -1475,7 +1593,57 @@ figcaption {
 }
 
 .project-card:hover .project-cover::after {
-  opacity: 0.78;
+  opacity: 0.7;
+}
+
+.project-card:hover .project-cover {
+  filter: saturate(1.08) contrast(1.04);
+}
+
+.project-card:hover .project-status {
+  transform: translateY(-1px);
+}
+
+.project-share-button {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 4;
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 13px;
+  color: white;
+  background: rgba(13, 28, 28, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 999px;
+  box-shadow: 0 12px 28px rgba(4, 14, 16, 0.22);
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1;
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.project-share-button:hover,
+.project-share-button:focus-visible {
+  background: rgba(20, 79, 51, 0.9);
+  border-color: rgba(229, 201, 136, 0.72);
+  box-shadow: 0 16px 32px rgba(4, 14, 16, 0.28);
+  transform: translateY(-1px);
+}
+
+.project-share-button.is-copied {
+  color: #112024;
+  background: rgba(244, 220, 158, 0.95);
+  border-color: rgba(244, 220, 158, 0.95);
 }
 
 .storix-cover {
@@ -1671,17 +1839,13 @@ figcaption {
   gap: 14px;
   align-content: start;
   grid-template-rows: auto auto auto auto auto 1fr;
-  padding: 20px;
+  padding: 22px;
 }
 
 .project-content > div,
 .project-facts,
 .project-facts div {
   min-width: 0;
-}
-
-.project-content .button {
-  align-self: end;
 }
 
 .project-content h3 {
@@ -1710,7 +1874,9 @@ figcaption {
 .project-metrics span {
   min-height: 68px;
   padding: 10px;
-  background: #f6f2e9;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.38), rgba(246, 242, 233, 0.84)),
+    #f6f2e9;
   border-radius: 8px;
   color: var(--muted);
   font-size: 13px;
@@ -1749,6 +1915,38 @@ figcaption {
 
 .availability-caption.muted strong {
   color: var(--muted);
+}
+
+.project-actions {
+  align-self: end;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.project-actions .button {
+  width: 100%;
+  min-height: 46px;
+  padding-inline: 12px;
+}
+
+.button.line.subtle {
+  color: #fff;
+  background: linear-gradient(135deg, #0fbf61, #0a9f50);
+  border-color: rgba(15, 191, 97, 0.9);
+  box-shadow: 0 12px 28px rgba(10, 159, 80, 0.16);
+}
+
+.button.line.subtle:hover {
+  background: linear-gradient(135deg, #16cd6f, #0a944c);
+}
+
+.button.is-copied,
+.button.line.subtle.is-copied {
+  color: #112024;
+  background: var(--gold-soft);
+  border-color: rgba(195, 155, 76, 0.72);
 }
 
 .availability-bar .bar {
@@ -2375,18 +2573,33 @@ figcaption {
     font-size: 14px;
   }
 
-  .project-sort {
+  .project-sort,
+  .project-select-filter {
     gap: 2px;
     padding: 6px 10px;
   }
 
-  .project-sort span {
+  .project-sort span,
+  .project-select-filter span {
     display: none;
   }
 
-  .project-sort select {
+  .project-sort select,
+  .project-select-filter select {
     min-height: 34px;
     font-size: 15px;
+  }
+
+  .active-filter-chips {
+    margin: -2px 0 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+
+  .active-filter-chips span {
+    flex: 0 0 auto;
+    font-size: 12px;
   }
 
   .project-filter-pills {
@@ -2491,6 +2704,14 @@ figcaption {
     font-size: 12px;
   }
 
+  .project-share-button {
+    top: 10px;
+    right: 10px;
+    min-height: 28px;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
   .bizspace-hero-visual {
     place-content: end start;
     padding: 0 22px 28px;
@@ -2569,6 +2790,15 @@ figcaption {
     min-height: 40px;
     padding: 9px 12px;
     font-size: 14px;
+  }
+
+  .project-actions {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .project-actions .button {
+    min-height: 42px;
   }
 
   .overview-row {

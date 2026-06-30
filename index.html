@@ -4,10 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CENTRIX Park | โกดังและออฟฟิศให้เช่า</title>
+    <meta name="description" content="รวมโกดังพร้อมสำนักงานให้เช่าในทำเลพรีเมียม พร้อมสถานะยูนิตว่าง ราคาเริ่มต้น และข้อมูลสำคัญของแต่ละโครงการก่อนนัดชมสถานที่จริง">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.centrixpark.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CENTRIX Park">
+    <meta property="og:title" content="CENTRIX Park | โกดังและออฟฟิศให้เช่าทำเลพรีเมียม">
+    <meta property="og:description" content="เลือกดูโครงการโกดังพร้อมสำนักงานให้เช่า พร้อมสถานะยูนิตว่าง ราคาเริ่มต้น และข้อมูลสำคัญก่อนนัดชมสถานที่จริง">
+    <meta property="og:url" content="https://www.centrixpark.com/">
+    <meta property="og:image" content="https://www.centrixpark.com/assets/storix-sriwara/hero-daylight.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CENTRIX Park | โกดังและออฟฟิศให้เช่าทำเลพรีเมียม">
+    <meta name="twitter:description" content="รวมโครงการโกดังพร้อมสำนักงานให้เช่า พร้อมสถานะยูนิตว่าง ราคาเริ่มต้น และทำเลสำคัญ">
+    <meta name="twitter:image" content="https://www.centrixpark.com/assets/storix-sriwara/hero-daylight.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260630-phatthanakan-layout-2">
+    <link rel="stylesheet" href="styles.css?v=20260630-share-cover-1">
   </head>
   <body class="home-page">
     <header class="topbar home-topbar">
@@ -37,7 +50,8 @@
           </div>
           <div class="hero-actions">
             <a class="button primary" href="#projects">ดูโครงการทั้งหมด</a>
-            <a class="button ghost dark" href="https://lin.ee/n7IwEYp" target="_blank" rel="noreferrer">สอบถามทาง LINE</a>
+            <a class="button ghost dark" href="https://lin.ee/n7IwEYp" target="_blank" rel="noreferrer" data-line-message="สนใจสอบถามภาพรวมโครงการโกดังและออฟฟิศให้เช่าของ CENTRIX Park">สอบถามทาง LINE</a>
+            <button class="button share" type="button" data-share data-share-url="./" data-share-title="CENTRIX Park" data-share-text="รวมโครงการโกดังและออฟฟิศให้เช่า พร้อมดูสถานะยูนิตว่างล่าสุด" data-share-done="แชร์แล้ว" data-share-copied="คัดลอกลิงก์แล้ว">แชร์หน้าเว็บ</button>
           </div>
         </div>
         <div class="home-hero-media" aria-label="ภาพรวมโครงการ">
@@ -108,12 +122,32 @@
           <div class="project-search">
             <input type="search" placeholder="ค้นหาทำเล / ชื่อโครงการ" aria-label="ค้นหาทำเลหรือชื่อโครงการ" data-project-search>
           </div>
+          <label class="project-select-filter">
+            <span>ทำเล</span>
+            <select data-location-filter aria-label="กรองตามทำเล">
+              <option value="all">ทุกทำเล</option>
+              <option value="pattanakarn">พัฒนาการ</option>
+              <option value="town-in-town">ทาวน์อินทาวน์</option>
+              <option value="ramindra">เลียบด่วนรามอินทรา</option>
+            </select>
+          </label>
           <label class="project-sort">
             <span>เรียงลำดับ</span>
             <select data-project-sort aria-label="เรียงลำดับโครงการ">
               <option value="latest">โครงการล่าสุด</option>
               <option value="price-asc">ราคาต่ำสุด-สูงสุด</option>
               <option value="available-desc">ยูนิตว่างเยอะ-น้อย</option>
+              <option value="availability-percent">สัดส่วนว่างสูงสุด</option>
+            </select>
+          </label>
+          <label class="project-select-filter compact-filter">
+            <span>ยูนิตว่างขั้นต่ำ</span>
+            <select data-min-available aria-label="กรองตามจำนวนยูนิตว่างขั้นต่ำ">
+              <option value="0">ไม่กำหนด</option>
+              <option value="1">อย่างน้อย 1 ยูนิต</option>
+              <option value="5">อย่างน้อย 5 ยูนิต</option>
+              <option value="10">อย่างน้อย 10 ยูนิต</option>
+              <option value="20">อย่างน้อย 20 ยูนิต</option>
             </select>
           </label>
           <div class="project-filter-pills" aria-label="ตัวกรองสถานะโครงการ">
@@ -145,16 +179,20 @@
             <button class="button ghost dark compact" type="button" data-clear-filter>ล้าง</button>
           </div>
         </div>
+        <div class="active-filter-chips" aria-live="polite" data-active-filters></div>
         <p class="filter-result" data-filter-result>แสดง 3 โครงการ</p>
 
         <div class="project-grid">
-          <article class="project-card project-card-compact reveal-on-scroll" data-project-card data-status="available premium" data-name="Storix Warehouse พัฒนาการ 32/1" data-location="พัฒนาการ 32/1" data-min-price="35000" data-total-units="23" data-available-units="22" data-updated-order="4">
-            <a class="project-image project-cover phatthanakan-cover" href="storix-phatthanakan32-1/" aria-label="ดูโครงการ Storix พัฒนาการ 32/1">
-              <span class="project-status available">มียูนิตว่าง</span>
-              <span class="project-cover-brand">Storix</span>
-              <strong>พัฒนาการ 32/1</strong>
-              <small>Pattanakarn 32/1</small>
-            </a>
+          <article class="project-card project-card-compact reveal-on-scroll" data-project-card data-status="available premium" data-name="Storix Warehouse พัฒนาการ 32/1" data-brand="Storix" data-location="พัฒนาการ 32/1" data-location-key="pattanakarn" data-tags="โกดัง สำนักงาน ถนนพัฒนาการ ซอยพัฒนาการ 32/1 premium warehouse office" data-min-price="35000" data-area="106" data-total-units="23" data-available-units="22" data-updated-order="4">
+            <div class="project-cover-wrap">
+              <a class="project-image project-cover phatthanakan-cover" href="storix-phatthanakan32-1/" aria-label="ดูโครงการ Storix พัฒนาการ 32/1">
+                <span class="project-status available">มียูนิตว่าง</span>
+                <span class="project-cover-brand">Storix</span>
+                <strong>พัฒนาการ 32/1</strong>
+                <small>Pattanakarn 32/1</small>
+              </a>
+              <button class="project-share-button" type="button" data-share data-share-url="storix-phatthanakan32-1/" data-share-title="Storix Warehouse พัฒนาการ 32/1" data-share-text="โกดังพร้อมสำนักงานบนถนนพัฒนาการ ซอยพัฒนาการ 32/1" data-share-done="แชร์แล้ว" data-share-copied="คัดลอกลิงก์แล้ว">แชร์</button>
+            </div>
             <div class="project-content">
               <div>
                 <p class="eyebrow">Pattanakarn</p>
@@ -176,16 +214,22 @@
                 <div><dt>พื้นที่เริ่มต้น</dt><dd>106 ตร.ม.</dd></div>
                 <div><dt>สถานะล่าสุด</dt><dd>30 มิ.ย. 2026</dd></div>
               </dl>
-              <a class="button primary" href="storix-phatthanakan32-1/">ดูรายละเอียดโครงการ</a>
+              <div class="project-actions">
+                <a class="button primary" href="storix-phatthanakan32-1/">ดูรายละเอียดโครงการ</a>
+                <a class="button line subtle" href="https://lin.ee/n7IwEYp" target="_blank" rel="noreferrer" data-line-message="สนใจสอบถามรายละเอียด Storix Warehouse พัฒนาการ 32/1 ราคาเริ่มต้น 35,000 บาท/เดือน ยูนิตว่าง 22 ยูนิต">สอบถามโครงการนี้</a>
+              </div>
             </div>
           </article>
-          <article class="project-card project-card-compact featured reveal-on-scroll" data-project-card data-status="available premium" data-name="Storix Warehouse ศรีวรา" data-location="ถนนศรีวรา ทาวน์อินทาวน์" data-min-price="38000" data-total-units="18" data-available-units="10" data-updated-order="2">
-            <a class="project-image project-cover storix-cover" href="storix-sriwara/" aria-label="ดูโครงการ Storix ศรีวรา">
-              <span class="project-status available">มียูนิตว่าง</span>
-              <span class="project-cover-brand">Storix</span>
-              <strong>ศรีวรา</strong>
-              <small>Town in Town</small>
-            </a>
+          <article class="project-card project-card-compact featured reveal-on-scroll" data-project-card data-status="available premium" data-name="Storix Warehouse ศรีวรา" data-brand="Storix" data-location="ถนนศรีวรา ทาวน์อินทาวน์" data-location-key="town-in-town" data-tags="โกดัง สำนักงาน ศรีวรา ทาวน์อินทาวน์ town in town premium warehouse office" data-min-price="38000" data-area="115" data-total-units="18" data-available-units="10" data-updated-order="2">
+            <div class="project-cover-wrap">
+              <a class="project-image project-cover storix-cover" href="storix-sriwara/" aria-label="ดูโครงการ Storix ศรีวรา">
+                <span class="project-status available">มียูนิตว่าง</span>
+                <span class="project-cover-brand">Storix</span>
+                <strong>ศรีวรา</strong>
+                <small>Town in Town</small>
+              </a>
+              <button class="project-share-button" type="button" data-share data-share-url="storix-sriwara/" data-share-title="Storix Warehouse ศรีวรา" data-share-text="Premium Warehouse & Office ทำเลถนนศรีวรา ทาวน์อินทาวน์" data-share-done="แชร์แล้ว" data-share-copied="คัดลอกลิงก์แล้ว">แชร์</button>
+            </div>
             <div class="project-content">
               <div>
                 <p class="eyebrow">Town in Town</p>
@@ -207,17 +251,23 @@
                 <div><dt>พื้นที่เริ่มต้น</dt><dd>115 ตร.ม.</dd></div>
                 <div><dt>สถานะล่าสุด</dt><dd>30 มิ.ย. 2026</dd></div>
               </dl>
-              <a class="button primary" href="storix-sriwara/">ดูรายละเอียดโครงการ</a>
+              <div class="project-actions">
+                <a class="button primary" href="storix-sriwara/">ดูรายละเอียดโครงการ</a>
+                <a class="button line subtle" href="https://lin.ee/n7IwEYp" target="_blank" rel="noreferrer" data-line-message="สนใจสอบถามรายละเอียด Storix Warehouse ศรีวรา ราคาเริ่มต้น 38,000 บาท/เดือน ยูนิตว่าง 10 ยูนิต">สอบถามโครงการนี้</a>
+              </div>
             </div>
           </article>
 
-          <article class="project-card project-card-compact reveal-on-scroll" data-project-card data-status="available premium" data-name="BizSpace เลียบทางด่วนรามอินทรา" data-location="เลียบด่วนรามอินทรา-อาจณรงค์" data-min-price="40000" data-total-units="6" data-available-units="6" data-updated-order="3">
-            <a class="project-image project-cover ramindra-cover" href="bizspace-ramindra/" aria-label="ดูโครงการ BizSpace รามอินทรา">
-              <span class="project-status available">มียูนิตว่าง</span>
-              <span class="project-cover-brand">BizSpace</span>
-              <strong>รามอินทรา</strong>
-              <small>เลียบด่วนรามอินทรา-อาจณรงค์</small>
-            </a>
+          <article class="project-card project-card-compact reveal-on-scroll" data-project-card data-status="available premium" data-name="BizSpace เลียบทางด่วนรามอินทรา" data-brand="BizSpace" data-location="เลียบด่วนรามอินทรา-อาจณรงค์" data-location-key="ramindra" data-tags="โกดัง สำนักงาน เลียบด่วน รามอินทรา อาจณรงค์ EV wall charge bizspace premium warehouse office" data-min-price="40000" data-area="120" data-total-units="6" data-available-units="6" data-updated-order="3">
+            <div class="project-cover-wrap">
+              <a class="project-image project-cover ramindra-cover" href="bizspace-ramindra/" aria-label="ดูโครงการ BizSpace รามอินทรา">
+                <span class="project-status available">มียูนิตว่าง</span>
+                <span class="project-cover-brand">BizSpace</span>
+                <strong>รามอินทรา</strong>
+                <small>เลียบด่วนรามอินทรา-อาจณรงค์</small>
+              </a>
+              <button class="project-share-button" type="button" data-share data-share-url="bizspace-ramindra/" data-share-title="BizSpace เลียบทางด่วนรามอินทรา" data-share-text="โกดังพร้อมสำนักงาน ทำเลเลียบด่วนรามอินทรา-อาจณรงค์" data-share-done="แชร์แล้ว" data-share-copied="คัดลอกลิงก์แล้ว">แชร์</button>
+            </div>
             <div class="project-content">
               <div>
                 <p class="eyebrow">Expressway District</p>
@@ -238,9 +288,17 @@
                 <div><dt>พื้นที่เริ่มต้น</dt><dd>120 ตร.ม.</dd></div>
                 <div><dt>สถานะล่าสุด</dt><dd>29 มิ.ย. 2026</dd></div>
               </dl>
-              <a class="button primary" href="bizspace-ramindra/">ดูรายละเอียดโครงการ</a>
+              <div class="project-actions">
+                <a class="button primary" href="bizspace-ramindra/">ดูรายละเอียดโครงการ</a>
+                <a class="button line subtle" href="https://lin.ee/n7IwEYp" target="_blank" rel="noreferrer" data-line-message="สนใจสอบถามรายละเอียด BizSpace เลียบทางด่วนรามอินทรา ราคาเริ่มต้น 40,000 บาท/เดือน ยูนิตว่าง 6 ยูนิต">สอบถามโครงการนี้</a>
+              </div>
             </div>
           </article>
+        </div>
+        <div class="project-empty-state" hidden data-empty-projects>
+          <strong>ไม่พบโครงการที่ตรงกับตัวกรอง</strong>
+          <p>ลองลดช่วงราคา เปลี่ยนทำเล หรือกดล้างตัวกรองเพื่อดูโครงการทั้งหมดอีกครั้ง</p>
+          <button class="button primary compact" type="button" data-clear-filter>ล้างตัวกรอง</button>
         </div>
       </section>
 
@@ -281,16 +339,17 @@
         </div>
         <div class="contact-actions">
           <a class="button primary" href="tel:0836662525">โทร 083-666-2525</a>
-          <a class="button line" href="https://lin.ee/n7IwEYp" target="_blank" rel="noreferrer">ติดต่อ LINE</a>
+          <a class="button line" href="https://lin.ee/n7IwEYp" target="_blank" rel="noreferrer" data-line-message="สนใจสอบถามรายละเอียดโครงการโกดังและออฟฟิศให้เช่าของ CENTRIX Park">ติดต่อ LINE</a>
+          <button class="button share dark" type="button" data-share data-share-url="./" data-share-title="CENTRIX Park" data-share-text="รวมโครงการโกดังและออฟฟิศให้เช่าพร้อมสถานะยูนิตว่างล่าสุด" data-share-done="แชร์แล้ว" data-share-copied="คัดลอกลิงก์แล้ว">แชร์เว็บนี้</button>
         </div>
       </section>
     </main>
 
     <div class="sticky-contact" aria-label="ติดต่อด่วน">
       <a href="tel:0836662525">โทร 083-666-2525</a>
-      <a href="https://lin.ee/n7IwEYp" target="_blank" rel="noreferrer">LINE</a>
+      <a href="https://lin.ee/n7IwEYp" target="_blank" rel="noreferrer" data-line-message="สนใจสอบถามรายละเอียดโครงการโกดังและออฟฟิศให้เช่าของ CENTRIX Park">LINE</a>
       <a href="#projects">โครงการ</a>
     </div>
-    <script src="home.js?v=20260630-phatthanakan-prices-1"></script>
+    <script src="home.js?v=20260630-share-cover-1"></script>
   </body>
 </html>

@@ -203,6 +203,46 @@ document.addEventListener("click", async (event) => {
   window.open(targetUrl, "_blank", "noopener,noreferrer");
 });
 
+document.addEventListener("click", async (event) => {
+  const shareButton = event.target.closest("[data-share]");
+  if (!shareButton) return;
+
+  event.preventDefault();
+
+  const originalText = shareButton.dataset.originalText || shareButton.textContent;
+  const url = new URL(shareButton.dataset.shareUrl || window.location.href, window.location.href).href;
+  const shareData = {
+    title: shareButton.dataset.shareTitle || document.title,
+    text: shareButton.dataset.shareText || "",
+    url
+  };
+
+  shareButton.dataset.originalText = originalText;
+
+  try {
+    if (navigator.share) {
+      await navigator.share(shareData);
+      shareButton.textContent = shareButton.dataset.shareDone || originalText;
+    } else {
+      await navigator.clipboard.writeText(url);
+      shareButton.textContent = shareButton.dataset.shareCopied || originalText;
+    }
+  } catch (error) {
+    if (error?.name === "AbortError") return;
+
+    try {
+      await navigator.clipboard.writeText(url);
+      shareButton.textContent = shareButton.dataset.shareCopied || originalText;
+    } catch {
+      shareButton.textContent = url;
+    }
+  }
+
+  window.setTimeout(() => {
+    shareButton.textContent = originalText;
+  }, 1800);
+});
+
 const adminDialog = document.querySelector("[data-admin-dialog]");
 const loginDialog = document.querySelector("[data-login-dialog]");
 const loginForm = document.querySelector("[data-login-form]");
