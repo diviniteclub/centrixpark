@@ -5,13 +5,13 @@ const defaultUnits = [
   { id: "U6", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "สถานะจากภาพตัวอย่าง" },
   { id: "U5", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "มีผู้เช่าแล้ว" },
   { id: "U4", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "สถานะจากภาพตัวอย่าง" },
-  { id: "U3", side: "left", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "available", note: "หัวมุม" },
+  { id: "U3", side: "left", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "reserved", note: "มีผู้เช่าแล้ว" },
   { id: "U2", side: "left", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "reserved", note: "สถานะจากภาพตัวอย่าง" },
   { id: "U1", side: "left", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "reserved", note: "สถานะจากภาพตัวอย่าง" },
   { id: "U10", side: "right", type: "Large Depth", size: "6.5 x 15 ม.", area: "120 ตร.ม.", price: 40000, status: "reserved", note: "มีผู้เช่าแล้ว" },
   { id: "U11", side: "right", type: "Large Depth", size: "6.5 x 15 ม.", area: "120 ตร.ม.", price: 40000, status: "reserved", note: "มีผู้เช่าแล้ว" },
   { id: "U12", side: "right", type: "Large Depth", size: "6.5 x 15 ม.", area: "120 ตร.ม.", price: 40000, status: "reserved", note: "มีผู้เช่าแล้ว" },
-  { id: "U14", side: "right", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "available", note: "ยูนิตมาตรฐาน" },
+  { id: "U14", side: "right", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "มีผู้เช่าแล้ว" },
   { id: "U15", side: "right", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "มีผู้เช่าแล้ว" },
   { id: "U16", side: "right", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "มีผู้เช่าแล้ว" },
   { id: "U17", side: "right", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "reserved", note: "มีผู้เช่าแล้ว" },
@@ -25,7 +25,7 @@ const statusLabels = {
   rented: "ให้เช่าแล้ว"
 };
 
-const storageKey = "storix-units-v8";
+const storageKey = "storix-units-v10";
 const adminPassword = "2468";
 const lineUrl = "https://lin.ee/n7IwEYp";
 const unitGapBefore = new Set(["U6", "U3", "U14", "U17"]);
