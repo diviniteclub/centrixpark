@@ -3,7 +3,7 @@ const defaultUnits = [
   { id: "L2", side: "right", type: "Standard Width", size: "6 x 16 ม.", area: "120 ตร.ม.", price: 40000, status: "available", note: "EV Wall Charge · Digital Door Lock" },
   { id: "L3", side: "right", type: "Standard Width", size: "6 x 16 ม.", area: "120 ตร.ม.", price: 40000, status: "available", note: "EV Wall Charge · Digital Door Lock" },
   { id: "L4", side: "right", type: "Standard Width", size: "6 x 16 ม.", area: "120 ตร.ม.", price: 40000, status: "available", note: "EV Wall Charge · Digital Door Lock" },
-  { id: "L5", side: "right", type: "Wide Front Unit", size: "7.25 x 16 ม.", area: "ประมาณ 116 ตร.ม.", price: 45000, status: "available", note: "หน้ากว้างพิเศษ · EV Wall Charge" },
+  { id: "L5", side: "right", type: "Wide Front Unit", size: "7.25 x 16 ม.", area: "ประมาณ 116 ตร.ม.", price: 45000, status: "reserved", note: "มีผู้เช่าแล้ว" },
   { id: "L6", side: "right", type: "Wide Front Unit", size: "7.25 x 16 ม.", area: "ประมาณ 116 ตร.ม.", price: 45000, status: "reserved", note: "มีผู้เช่าแล้ว" }
 ];
 
@@ -13,7 +13,7 @@ const statusLabels = {
   rented: "ให้เช่าแล้ว"
 };
 
-const storageKey = "bizspace-ramindra-units-v2";
+const storageKey = "bizspace-ramindra-units-v3";
 const adminPassword = "2468";
 const lineUrl = "https://lin.ee/n7IwEYp";
 const unitGapBefore = new Set(["L3", "L5"]);

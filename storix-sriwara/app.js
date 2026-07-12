@@ -1,6 +1,6 @@
 ﻿const defaultUnits = [
   { id: "U9", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "มีผู้เช่าแล้ว" },
-  { id: "U8", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "available", note: "ยูนิตมาตรฐาน" },
+  { id: "U8", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "มีผู้เช่าแล้ว" },
   { id: "U7", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "มีผู้เช่าแล้ว" },
   { id: "U6", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "สถานะจากภาพตัวอย่าง" },
   { id: "U5", side: "left", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "มีผู้เช่าแล้ว" },
@@ -15,8 +15,8 @@
   { id: "U15", side: "right", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "มีผู้เช่าแล้ว" },
   { id: "U16", side: "right", type: "Standard Unit", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 38000, status: "reserved", note: "มีผู้เช่าแล้ว" },
   { id: "U17", side: "right", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "reserved", note: "มีผู้เช่าแล้ว" },
-  { id: "U18", side: "right", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "available", note: "หัวมุม" },
-  { id: "U19", side: "right", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "available", note: "หัวมุม" }
+  { id: "U18", side: "right", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "reserved", note: "มีผู้เช่าแล้ว" },
+  { id: "U19", side: "right", type: "Premium Corner", size: "6.5 x 14 ม.", area: "115 ตร.ม.", price: 45000, status: "reserved", note: "มีผู้เช่าแล้ว" }
 ];
 
 const statusLabels = {
@@ -25,7 +25,7 @@ const statusLabels = {
   rented: "ให้เช่าแล้ว"
 };
 
-const storageKey = "storix-sriwara-units-v8";
+const storageKey = "storix-sriwara-units-v9";
 const adminPassword = "2468";
 const lineUrl = "https://lin.ee/n7IwEYp";
 const unitGapBefore = new Set(["U6", "U3", "U14", "U17"]);
