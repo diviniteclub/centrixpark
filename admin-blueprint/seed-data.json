@@ -1,4 +1,4 @@
-{
+﻿{
     "projects":  [
                      {
                          "slug":  "storix-sriwara",
@@ -469,8 +469,8 @@
                          "map_url":  "https://maps.app.goo.gl/kpFq4baostp8ijrr5",
                          "line_url":  "https://lin.ee/n7IwEYp",
                          "phone":  "083-666-2525",
-                         "hero_image_path":  "assets/storix-ladprao130/hero-front.png",
-                         "cover_image_path":  "assets/storix-ladprao130/hero-front.png",
+                         "hero_image_path":  "assets/storix-ladprao130/hero-front.jpg",
+                         "cover_image_path":  "assets/storix-ladprao130/hero-front.jpg",
                          "layout_image_path":  "assets/storix-ladprao130/site-layout.png",
                          "min_price_monthly":  40000,
                          "min_area_sqm":  124,

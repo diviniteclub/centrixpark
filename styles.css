@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --forest: #113d25;
   --forest-2: #1d5133;
   --gold: #c39b4c;
@@ -1682,7 +1682,7 @@ figcaption {
 .ladprao-cover {
   background:
     linear-gradient(105deg, rgba(16, 45, 34, 0.9), rgba(12, 22, 23, 0.78)),
-    url("assets/storix-ladprao130/hero-front.png"),
+    url("assets/storix-ladprao130/hero-front.jpg"),
     #113d25;
   background-position: center 56%;
   background-size: cover;
