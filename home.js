@@ -13,6 +13,7 @@ const projectGrid = document.querySelector(".project-grid");
 const money = new Intl.NumberFormat("th-TH");
 const lineUrl = "https://lin.ee/n7IwEYp";
 let activeStatus = "all";
+let activeFeatureSlide = 0;
 
 document.body.classList.add("has-reveal");
 
@@ -203,6 +204,41 @@ document.querySelectorAll("[data-clear-filter]").forEach((button) => {
   button.addEventListener("click", clearFilters);
 });
 
+const featureSlides = Array.from(document.querySelectorAll("[data-feature-slide]"));
+const featureDots = Array.from(document.querySelectorAll("[data-feature-dot]"));
+const featureSlider = document.querySelector("[data-feature-slider]");
+let featureTimer;
+
+function showFeatureSlide(index) {
+  if (!featureSlides.length) return;
+  activeFeatureSlide = (index + featureSlides.length) % featureSlides.length;
+  featureSlides.forEach((slide, slideIndex) => {
+    slide.classList.toggle("is-active", slideIndex === activeFeatureSlide);
+  });
+  featureDots.forEach((dot, dotIndex) => {
+    dot.classList.toggle("active", dotIndex === activeFeatureSlide);
+  });
+}
+
+function startFeatureSlider() {
+  if (featureSlides.length < 2) return;
+  window.clearInterval(featureTimer);
+  featureTimer = window.setInterval(() => {
+    showFeatureSlide(activeFeatureSlide + 1);
+  }, 4200);
+}
+
+featureDots.forEach((dot, index) => {
+  dot.addEventListener("click", (event) => {
+    event.preventDefault();
+    showFeatureSlide(index);
+    startFeatureSlider();
+  });
+});
+
+featureSlider?.addEventListener("mouseenter", () => window.clearInterval(featureTimer));
+featureSlider?.addEventListener("mouseleave", startFeatureSlider);
+
 document.addEventListener("click", async (event) => {
   const lineButton = event.target.closest("[data-line-message]");
   if (!lineButton) return;
@@ -290,3 +326,5 @@ if ("IntersectionObserver" in window) {
 
 updateSummaryStats();
 updateResults();
+showFeatureSlide(0);
+startFeatureSlider();

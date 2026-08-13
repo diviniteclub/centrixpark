@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260813-font-1">
+    <link rel="stylesheet" href="styles.css?v=20260813-feature-slider-1">
   </head>
   <body class="home-page">
     <header class="topbar home-topbar">
@@ -54,16 +54,60 @@
             <button class="button share" type="button" data-share data-share-url="./" data-share-title="CENTRIX Park" data-share-text="รวมโครงการโกดังและออฟฟิศให้เช่า พร้อมดูสถานะยูนิตว่างล่าสุด" data-share-done="แชร์แล้ว" data-share-copied="คัดลอกลิงก์แล้ว">แชร์หน้าเว็บ</button>
           </div>
         </div>
-        <div class="home-hero-media" aria-label="ภาพรวมโครงการ">
-          <img src="assets/storix-sriwara/hero-daylight.jpeg" alt="โกดังและออฟฟิศให้เช่า">
-          <div class="home-hero-badge">
-            <strong>38</strong>
-            <span>ยูนิตว่างพร้อมนัดชม</span>
-          </div>
-          <div class="home-hero-panel">
-            <span>Featured Project</span>
-            <strong>Storix ศรีวรา</strong>
-            <small>Premium Warehouse & Office</small>
+        <div class="home-hero-media home-feature-slider" data-feature-slider aria-label="โครงการแนะนำ">
+          <a class="feature-slide is-active" href="storix-ladprao130/" data-feature-slide aria-label="ดูโครงการ Storix ลาดพร้าว 130">
+            <img src="assets/storix-ladprao130/hero-front.jpg" alt="Storix Warehouse ลาดพร้าว 130">
+            <span class="home-hero-panel">
+              <span>Featured Project</span>
+              <strong>Storix ลาดพร้าว 130</strong>
+              <small>ลาดพร้าว 130 แยก 4</small>
+            </span>
+            <span class="home-hero-badge">
+              <strong>5</strong>
+              <span>ยูนิตว่างพร้อมนัดชม</span>
+            </span>
+          </a>
+          <a class="feature-slide" href="storix-phatthanakan32-1/" data-feature-slide aria-label="ดูโครงการ Storix พัฒนาการ 32/1">
+            <img src="assets/storix-phatthanakan32-1/hero.jpeg" alt="Storix Warehouse พัฒนาการ 32/1">
+            <span class="home-hero-panel">
+              <span>Featured Project</span>
+              <strong>Storix พัฒนาการ 32/1</strong>
+              <small>Pattanakarn 32/1</small>
+            </span>
+            <span class="home-hero-badge">
+              <strong>13</strong>
+              <span>ยูนิตว่างพร้อมนัดชม</span>
+            </span>
+          </a>
+          <a class="feature-slide" href="storix-sriwara/" data-feature-slide aria-label="ดูโครงการ Storix ศรีวรา">
+            <img src="assets/storix-sriwara/hero-daylight.jpeg" alt="Storix Warehouse ศรีวรา">
+            <span class="home-hero-panel">
+              <span>Featured Project</span>
+              <strong>Storix ศรีวรา</strong>
+              <small>Town in Town</small>
+            </span>
+            <span class="home-hero-badge">
+              <strong>0</strong>
+              <span>ยูนิตว่างพร้อมนัดชม</span>
+            </span>
+          </a>
+          <a class="feature-slide" href="bizspace-ramindra/" data-feature-slide aria-label="ดูโครงการ BizSpace รามอินทรา">
+            <img src="assets/bizspace-ramindra/hero-wide.jpeg" alt="BizSpace เลียบทางด่วนรามอินทรา">
+            <span class="home-hero-panel">
+              <span>Featured Project</span>
+              <strong>BizSpace รามอินทรา</strong>
+              <small>เลียบด่วนรามอินทรา-อาจณรงค์</small>
+            </span>
+            <span class="home-hero-badge">
+              <strong>0</strong>
+              <span>ยูนิตว่างพร้อมนัดชม</span>
+            </span>
+          </a>
+          <div class="feature-slider-dots" aria-label="เลือกโครงการแนะนำ">
+            <button class="active" type="button" data-feature-dot aria-label="แสดง Storix ลาดพร้าว 130"></button>
+            <button type="button" data-feature-dot aria-label="แสดง Storix พัฒนาการ 32/1"></button>
+            <button type="button" data-feature-dot aria-label="แสดง Storix ศรีวรา"></button>
+            <button type="button" data-feature-dot aria-label="แสดง BizSpace รามอินทรา"></button>
           </div>
         </div>
       </section>
@@ -395,6 +439,6 @@
       <a href="https://lin.ee/n7IwEYp" target="_blank" rel="noreferrer" data-line-message="สนใจสอบถามรายละเอียดโครงการโกดังและออฟฟิศให้เช่าของ CENTRIX Park">LINE</a>
       <a href="#projects">โครงการ</a>
     </div>
-    <script src="home.js?v=20260630-share-cover-1"></script>
+    <script src="home.js?v=20260813-feature-slider-1"></script>
   </body>
 </html>
