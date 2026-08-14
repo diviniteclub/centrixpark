@@ -29,7 +29,7 @@ const defaultUnits = unitIds.map((id) => {
     size: "6 x 14 ม.",
     area: "106 ตร.ม.",
     price,
-    status: ["LN1", "LN2", "LN4", "LN5", "LN6", "LN12", "LN14", "LN16", "LN23", "LN24"].includes(id) ? "reserved" : "available",
+    status: ["LN1", "LN3", "LN5", "LN6", "LN12", "LN14", "LN16", "LN23", "LN24"].includes(id) ? "reserved" : "available",
     note: "โกดังพร้อมสำนักงานและห้องน้ำในตัว"
   };
 });
@@ -40,7 +40,7 @@ const statusLabels = {
   rented: "ให้เช่าแล้ว"
 };
 
-const storageKey = "storix-phatthanakan32-1-units-v11";
+const storageKey = "storix-phatthanakan32-1-units-v12";
 const adminPassword = "2468";
 const lineUrl = "https://lin.ee/n7IwEYp";
 const unitGapBefore = new Set(["LN4", "LN7", "LN10", "LN14", "LN17", "LN20", "LN23"]);

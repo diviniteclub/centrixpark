@@ -655,7 +655,7 @@
           "price_monthly": 48000,
           "status": "reserved",
           "display_order": 1,
-          "note": "มีผู้เช่าแล้ว"
+          "note": "?????????????"
         },
         {
           "unit_code": "LN2",
@@ -667,9 +667,9 @@
           "depth_m": 14,
           "area_sqm": 106,
           "price_monthly": 48000,
-          "status": "reserved",
+          "status": "available",
           "display_order": 2,
-          "note": "มีผู้เช่าแล้ว"
+          "note": ""
         },
         {
           "unit_code": "LN3",
@@ -681,8 +681,9 @@
           "depth_m": 14,
           "area_sqm": 106,
           "price_monthly": 48000,
-          "status": "available",
-          "display_order": 3
+          "status": "reserved",
+          "display_order": 3,
+          "note": "?????????????"
         },
         {
           "unit_code": "LN4",
@@ -694,10 +695,10 @@
           "depth_m": 14,
           "area_sqm": 106,
           "price_monthly": 48000,
-          "status": "reserved",
+          "status": "available",
           "display_order": 4,
           "gap_before": true,
-          "note": "มีผู้เช่าแล้ว"
+          "note": ""
         },
         {
           "unit_code": "LN5",
@@ -711,7 +712,7 @@
           "price_monthly": 48000,
           "status": "reserved",
           "display_order": 5,
-          "note": "มีผู้เช่าแล้ว"
+          "note": "?????????????"
         },
         {
           "unit_code": "LN6",
@@ -725,7 +726,7 @@
           "price_monthly": 48000,
           "status": "reserved",
           "display_order": 6,
-          "note": "มีผู้เช่าแล้ว"
+          "note": "?????????????"
         },
         {
           "unit_code": "LN7",
@@ -739,7 +740,8 @@
           "price_monthly": 42000,
           "status": "available",
           "display_order": 7,
-          "gap_before": true
+          "gap_before": true,
+          "note": ""
         },
         {
           "unit_code": "LN8",
@@ -752,7 +754,8 @@
           "area_sqm": 106,
           "price_monthly": 42000,
           "status": "available",
-          "display_order": 8
+          "display_order": 8,
+          "note": ""
         },
         {
           "unit_code": "LN9",
@@ -765,7 +768,8 @@
           "area_sqm": 106,
           "price_monthly": 42000,
           "status": "available",
-          "display_order": 9
+          "display_order": 9,
+          "note": ""
         },
         {
           "unit_code": "LN10",
@@ -779,7 +783,8 @@
           "price_monthly": 42000,
           "status": "available",
           "display_order": 10,
-          "gap_before": true
+          "gap_before": true,
+          "note": ""
         },
         {
           "unit_code": "LN11",
@@ -792,7 +797,8 @@
           "area_sqm": 106,
           "price_monthly": 42000,
           "status": "available",
-          "display_order": 11
+          "display_order": 11,
+          "note": ""
         },
         {
           "unit_code": "LN12",
@@ -806,7 +812,7 @@
           "price_monthly": 42000,
           "status": "reserved",
           "display_order": 12,
-          "note": "มีผู้เช่าแล้ว"
+          "note": "?????????????"
         },
         {
           "unit_code": "LN14",
@@ -821,7 +827,7 @@
           "status": "reserved",
           "display_order": 14,
           "gap_before": true,
-          "note": "มีผู้เช่าแล้ว"
+          "note": "?????????????"
         },
         {
           "unit_code": "LN15",
@@ -834,7 +840,8 @@
           "area_sqm": 106,
           "price_monthly": 42000,
           "status": "available",
-          "display_order": 15
+          "display_order": 15,
+          "note": ""
         },
         {
           "unit_code": "LN16",
@@ -848,7 +855,7 @@
           "price_monthly": 42000,
           "status": "reserved",
           "display_order": 16,
-          "note": "มีผู้เช่าแล้ว"
+          "note": "?????????????"
         },
         {
           "unit_code": "LN17",
@@ -862,7 +869,8 @@
           "price_monthly": 35000,
           "status": "available",
           "display_order": 17,
-          "gap_before": true
+          "gap_before": true,
+          "note": ""
         },
         {
           "unit_code": "LN18",
@@ -875,7 +883,8 @@
           "area_sqm": 106,
           "price_monthly": 35000,
           "status": "available",
-          "display_order": 18
+          "display_order": 18,
+          "note": ""
         },
         {
           "unit_code": "LN19",
@@ -888,7 +897,8 @@
           "area_sqm": 106,
           "price_monthly": 35000,
           "status": "available",
-          "display_order": 19
+          "display_order": 19,
+          "note": ""
         },
         {
           "unit_code": "LN20",
@@ -902,7 +912,8 @@
           "price_monthly": 35000,
           "status": "available",
           "display_order": 20,
-          "gap_before": true
+          "gap_before": true,
+          "note": ""
         },
         {
           "unit_code": "LN21",
@@ -915,7 +926,8 @@
           "area_sqm": 106,
           "price_monthly": 35000,
           "status": "available",
-          "display_order": 21
+          "display_order": 21,
+          "note": ""
         },
         {
           "unit_code": "LN22",
@@ -928,7 +940,8 @@
           "area_sqm": 106,
           "price_monthly": 35000,
           "status": "available",
-          "display_order": 22
+          "display_order": 22,
+          "note": ""
         },
         {
           "unit_code": "LN23",
@@ -943,7 +956,7 @@
           "status": "reserved",
           "display_order": 23,
           "gap_before": true,
-          "note": "มีผู้เช่าแล้ว"
+          "note": "?????????????"
         },
         {
           "unit_code": "LN24",
@@ -957,9 +970,13 @@
           "price_monthly": 35000,
           "status": "reserved",
           "display_order": 24,
-          "note": "มีผู้เช่าแล้ว"
+          "note": "?????????????"
         }
-      ]
+      ],
+      "available_units": 14,
+      "reserved_units": 9,
+      "updated_at_label": "14 ?.?. 2026",
+      "updated_order": 23
     }
   ]
 }
