@@ -1,7 +1,7 @@
 const defaultUnits = [
-  { id: "LP1", side: "right", type: "Standard Unit", size: "5.8 x 17 ม.", area: "124 ตร.ม.", price: 40000, status: "available", note: "ที่จอดรถส่วนตัว · ออฟฟิศและห้องน้ำในตัว" },
-  { id: "LP2", side: "right", type: "Standard Unit", size: "5.8 x 17 ม.", area: "124 ตร.ม.", price: 40000, status: "available", note: "ที่จอดรถส่วนตัว · ออฟฟิศและห้องน้ำในตัว" },
-  { id: "LP3", side: "right", type: "Standard Unit", size: "5.8 x 17 ม.", area: "124 ตร.ม.", price: 40000, status: "available", note: "ที่จอดรถส่วนตัว · ออฟฟิศและห้องน้ำในตัว" },
+  { id: "LP1", side: "right", type: "Standard Unit", size: "5.8 x 17 ม.", area: "124 ตร.ม.", price: 40000, status: "reserved", note: "มีผู้เช่าแล้ว" },
+  { id: "LP2", side: "right", type: "Standard Unit", size: "5.8 x 17 ม.", area: "124 ตร.ม.", price: 40000, status: "reserved", note: "มีผู้เช่าแล้ว" },
+  { id: "LP3", side: "right", type: "Standard Unit", size: "5.8 x 17 ม.", area: "124 ตร.ม.", price: 40000, status: "reserved", note: "มีผู้เช่าแล้ว" },
   { id: "LP4", side: "right", type: "Standard Unit", size: "5.8 x 17 ม.", area: "124 ตร.ม.", price: 40000, status: "available", note: "ที่จอดรถส่วนตัว · ออฟฟิศและห้องน้ำในตัว" },
   { id: "LP5", side: "right", type: "Standard Unit", size: "5.8 x 17 ม.", area: "124 ตร.ม.", price: 40000, status: "available", note: "ที่จอดรถส่วนตัว · ออฟฟิศและห้องน้ำในตัว" },
   { id: "LP6", side: "right", type: "Standard Unit", size: "5.8 x 17 ม.", area: "124 ตร.ม.", price: 40000, status: "reserved", note: "มีผู้เช่าแล้ว" }
