@@ -738,10 +738,10 @@
           "depth_m": 14,
           "area_sqm": 106,
           "price_monthly": 42000,
-          "status": "available",
+          "status": "reserved",
           "display_order": 7,
           "gap_before": true,
-          "note": ""
+          "note": "?????????????"
         },
         {
           "unit_code": "LN8",
@@ -973,10 +973,10 @@
           "note": "?????????????"
         }
       ],
-      "available_units": 14,
-      "reserved_units": 9,
-      "updated_at_label": "14 ?.?. 2026",
-      "updated_order": 23
+      "available_units": 13,
+      "reserved_units": 10,
+      "updated_at_label": "17 ?.?. 2026",
+      "updated_order": 24
     }
   ]
 }
