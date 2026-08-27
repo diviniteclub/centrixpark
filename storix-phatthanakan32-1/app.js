@@ -11,8 +11,8 @@ const unitIds = [
 
 const defaultUnits = unitIds.map((id) => {
   const number = Number(id.replace("LN", ""));
-  let price = 35000;
-  let type = "Value Unit";
+  let price = 42000;
+  let type = "Standard Unit";
 
   if (number <= 6) {
     price = 48000;
@@ -40,7 +40,7 @@ const statusLabels = {
   rented: "ให้เช่าแล้ว"
 };
 
-const storageKey = "storix-phatthanakan32-1-units-v13";
+const storageKey = "storix-phatthanakan32-1-units-v14";
 const adminPassword = "2468";
 const lineUrl = "https://lin.ee/n7IwEYp";
 const unitGapBefore = new Set(["LN4", "LN7", "LN10", "LN14", "LN17", "LN20", "LN23"]);
