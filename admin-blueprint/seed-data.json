@@ -614,7 +614,7 @@
       "layout_image_path": "assets/storix-phatthanakan32-1/site-layout.jpeg",
       "min_price_monthly": 42000,
       "min_area_sqm": 106,
-      "last_status_date": "2026-08-27",
+      "last_status_date": "2026-09-20",
       "features": [
         {
           "icon_label": "WH",
@@ -754,9 +754,9 @@
           "depth_m": 14,
           "area_sqm": 106,
           "price_monthly": 42000,
-          "status": "available",
+          "status": "reserved",
           "display_order": 8,
-          "note": ""
+          "note": "?????????????"
         },
         {
           "unit_code": "LN9",
@@ -768,9 +768,9 @@
           "depth_m": 14,
           "area_sqm": 106,
           "price_monthly": 42000,
-          "status": "available",
+          "status": "reserved",
           "display_order": 9,
-          "note": ""
+          "note": "?????????????"
         },
         {
           "unit_code": "LN10",
@@ -974,10 +974,10 @@
           "note": "?????????????"
         }
       ],
-      "available_units": 11,
-      "reserved_units": 12,
-      "updated_at_label": "27 ?.?. 2026",
-      "updated_order": 26
+      "available_units": 9,
+      "reserved_units": 14,
+      "updated_at_label": "20 ?.?. 2026",
+      "updated_order": 27
     }
   ]
 }
