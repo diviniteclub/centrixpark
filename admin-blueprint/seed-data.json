@@ -474,7 +474,7 @@
       "layout_image_path": "assets/storix-ladprao130/site-layout.png",
       "min_price_monthly": 40000,
       "min_area_sqm": 124,
-      "last_status_date": "2026-08-22",
+      "last_status_date": "2026-09-22",
       "features": [
         {
           "icon_label": "WH",
@@ -575,8 +575,9 @@
           "depth_m": 17,
           "area_sqm": 124,
           "price_monthly": 40000,
-          "status": "available",
-          "display_order": 5
+          "status": "reserved",
+          "display_order": 5,
+          "note": "?????????????"
         },
         {
           "unit_code": "LP6",
@@ -593,10 +594,10 @@
           "note": "มีผู้เช่าแล้ว"
         }
       ],
-      "available_units": 1,
-      "reserved_units": 5,
-      "updated_at_label": "22 ส.ค. 2026",
-      "updated_order": 25
+      "available_units": 0,
+      "reserved_units": 6,
+      "updated_at_label": "22 ?.?. 2026",
+      "updated_order": 28
     },
     {
       "slug": "storix-phatthanakan32-1",
