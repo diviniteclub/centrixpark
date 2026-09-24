@@ -223,6 +223,15 @@ nav a:hover {
   background: #06c755;
 }
 
+.button.facebook {
+  color: white;
+  background: #1877f2;
+}
+
+.button.facebook:hover {
+  background: #0f63d3;
+}
+
 .button.share {
   color: var(--forest);
   border: 1px solid rgba(195, 155, 76, 0.45);
