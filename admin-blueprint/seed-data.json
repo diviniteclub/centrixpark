@@ -615,7 +615,7 @@
       "layout_image_path": "assets/storix-phatthanakan32-1/site-layout.jpeg",
       "min_price_monthly": 42000,
       "min_area_sqm": 106,
-      "last_status_date": "2026-10-18",
+      "last_status_date": "2026-10-19",
       "features": [
         {
           "icon_label": "WH",
@@ -783,10 +783,10 @@
           "depth_m": 14,
           "area_sqm": 106,
           "price_monthly": 42000,
-          "status": "available",
+          "status": "reserved",
           "display_order": 10,
           "gap_before": true,
-          "note": ""
+          "note": "จองแล้ว"
         },
         {
           "unit_code": "LN11",
@@ -975,10 +975,10 @@
           "note": "?????????????"
         }
       ],
-      "available_units": 3,
-      "reserved_units": 20,
-      "updated_at_label": "18 ต.ค. 2026",
-      "updated_order": 31
+      "available_units": 2,
+      "reserved_units": 21,
+      "updated_at_label": "19 ต.ค. 2026",
+      "updated_order": 32
     }
   ]
 }
