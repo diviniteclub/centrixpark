@@ -615,7 +615,7 @@
       "layout_image_path": "assets/storix-phatthanakan32-1/site-layout.jpeg",
       "min_price_monthly": 42000,
       "min_area_sqm": 106,
-      "last_status_date": "2026-10-19",
+      "last_status_date": "2026-10-21",
       "features": [
         {
           "icon_label": "WH",
@@ -798,9 +798,9 @@
           "depth_m": 14,
           "area_sqm": 106,
           "price_monthly": 42000,
-          "status": "available",
+          "status": "reserved",
           "display_order": 11,
-          "note": ""
+          "note": "จองแล้ว"
         },
         {
           "unit_code": "LN12",
@@ -841,9 +841,9 @@
           "depth_m": 14,
           "area_sqm": 106,
           "price_monthly": 42000,
-          "status": "available",
+          "status": "reserved",
           "display_order": 15,
-          "note": ""
+          "note": "จองแล้ว"
         },
         {
           "unit_code": "LN16",
@@ -975,10 +975,10 @@
           "note": "?????????????"
         }
       ],
-      "available_units": 2,
-      "reserved_units": 21,
-      "updated_at_label": "19 ต.ค. 2026",
-      "updated_order": 32
+      "available_units": 0,
+      "reserved_units": 23,
+      "updated_at_label": "21 ต.ค. 2026",
+      "updated_order": 33
     }
   ]
 }
