@@ -17,7 +17,7 @@
       "layout_image_path": "assets/storix-sriwara/site-layout-perspective.png",
       "min_price_monthly": 38000,
       "min_area_sqm": 115,
-      "last_status_date": "2026-07-12",
+      "last_status_date": "2026-11-15",
       "features": [
         {
           "icon_label": "WH",
@@ -305,9 +305,9 @@
           "depth_m": 14,
           "area_sqm": 115,
           "price_monthly": 45000,
-          "status": "reserved",
+          "status": "available",
           "display_order": 18,
-          "note": "มีผู้เช่าแล้ว"
+          "note": ""
         },
         {
           "unit_code": "U19",
@@ -319,9 +319,9 @@
           "depth_m": 14,
           "area_sqm": 115,
           "price_monthly": 45000,
-          "status": "reserved",
+          "status": "available",
           "display_order": 19,
-          "note": "มีผู้เช่าแล้ว"
+          "note": ""
         }
       ]
     },
